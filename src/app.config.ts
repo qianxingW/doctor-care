@@ -1,7 +1,8 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/PatientEscort/index',
+    'pages/patientEscort/index',
+    'pages/makeAppointment/index',
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -18,14 +19,20 @@ export default {
       {
         pagePath: 'pages/index/index',
         text: '首页',
-        // iconPath: 'static/images/tabbar/home.png',
-        // selectedIconPath: 'static/images/tabbar/home_active.png'
+        iconPath: 'assets/images/home.png',
+        selectedIconPath: 'assets/images/home_active.png'
       },
       {
-        pagePath: 'pages/PatientEscort/index',
+        pagePath: 'pages/patientEscort/index',
         text: '陪诊师',
-        // iconPath: 'static/images/tabbar/user.png',
-        // selectedIconPath: 'static/images/tabbar/user_active.png'
+        iconPath: 'assets/images/patient_escort.png',
+        selectedIconPath: 'assets/images/patient_escort_active.png'
+      },
+      {
+        pagePath: 'pages/makeAppointment/index',
+        text: '预约',
+        iconPath: 'assets/images/make_appointment.png',
+        selectedIconPath: 'assets/images/make_appointment_active.png'
       }
     ]
   }

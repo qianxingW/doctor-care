@@ -20,7 +20,13 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    // 以防止 tsc 编译报错。
+    "types": ["miniprogram-api-typings"],
+    "paths": {
+      "@vant/weapp/*": ["path/to/node_modules/@vant/weapp/dist/*"]
+    },
+    "lib": ["ES6"]
   },
   "include": ["./src", "./types"],
   "compileOnSave": false
